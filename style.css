@@ -12,7 +12,7 @@ html,body{
 
 .main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #202020;
 }
 
@@ -51,4 +51,83 @@ html,body{
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 1vw;
+}
+
+.searchResults{
+    width: 15.7%;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px 10px;
+    position: relative;
+    top: 58px;
+    right: 242px;
+}
+
+.searchResults img{
+    width: 40px;
+}
+
+.searchResults h3{
+    font-size: 13.5px;
+}
+
+.searchResults p{
+    font-size: 12px;
+}
+
+.moviesPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    gap: 150px;
+    color: #fff;
+    width: 80%;
+}
+
+.movieLeft img{
+    width: 250px;
+}
+
+.movieRight h1{
+    color: goldenrod;
+    padding-bottom: 20px;
+}
+
+.year{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.year button{
+    background-color: goldenrod;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 0.9vw;
+    font-weight: 500;
+    border: none;
+}
+
+.movieRight > button{
+    border: none;
+    background-color: #353535;
+    color: #fff;
+    padding: 7px 7px;
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.movieRight > h1{
+    color: #fff;
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+
+.movieRight > p{
+    margin-bottom: 15px;
 }

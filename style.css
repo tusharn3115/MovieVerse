@@ -1,37 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans";
 }
 
-html,body{
+html, body {
     height: 100%;
     width: 100%;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 100vh;
     background-color: #202020;
 }
 
-.logo{
+.logo {
     width: 100%;
     height: 80px;
     padding: 10px 8vw;
 }
 
-.logo span{
+.logo span {
     color: goldenrod;
 } 
 
-.logo h1{
+.logo h1 {
     font-size: 2.5vw;
     color: #fff;
 }
 
-.searchArea{
+.searchArea {
     width: 100%;
     height: 150px;
     background-color: #353535;
@@ -41,71 +41,99 @@ html,body{
     justify-content: center;
 }
 
-.searchArea label{
+.searchArea label {
     padding-top: 140px;
     font-size: 1.8vw;
     font-weight: 500;
 }
 
-.searchArea input{
+.searchArea input {
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 1vw;
 }
 
-.searchResults{
-    width: 15.7%;
+.search-list {
+    position: absolute;
+    top: 160px;
+    width: 80%;
+    background-color: #353535;
+    z-index: 100;
+    display: none; /* Initially hidden, to be displayed when results are available */
+}
+
+.search-list-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.search-list-item img {
+    width: 40px;
+    height: 60px;
+}
+
+.search-list-item h3, .search-list-item p {
+    margin: 0;
+    color: #fff;
+}
+
+.searchResults {
     background-color: #202020;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 20px;
     padding: 5px 10px;
     position: relative;
-    top: 58px;
-    right: 242px;
 }
 
-.searchResults img{
+.searchResults img {
     width: 40px;
 }
 
-.searchResults h3{
+.searchResults h3 {
     font-size: 13.5px;
 }
 
-.searchResults p{
+.searchResults p {
     font-size: 12px;
 }
 
-.moviesPart{
+.moviesPart {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    padding: 70px;
-    gap: 150px;
+    padding: 20px;
     color: #fff;
-    width: 80%;
-    margin-left: 195px;
+    width: 100%;
+    gap: 30px;
 }
 
-.movieLeft img{
+.movieLeft img {
     width: 250px;
 }
 
-.movieRight h1{
+.movieRight h1 {
     color: goldenrod;
     padding-bottom: 20px;
 }
 
-.year{
+.year {
     display: flex;
     gap: 10px;
     padding-bottom: 20px;
 }
 
-.year button{
-    background-color: goldenrod;
+.year h5 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.year button {
+    background-color: rgb(184, 139, 26);
     color: #fff;
     padding: 0 5px;
     font-size: 0.9vw;
@@ -113,7 +141,7 @@ html,body{
     border: none;
 }
 
-.movieRight > button{
+.movieRight > button {
     border: none;
     background-color: #353535;
     color: #fff;
@@ -123,12 +151,20 @@ html,body{
     margin-bottom: 15px;
 }
 
-.movieRight > h1{
+.movieRight > h1 {
     color: #fff;
     font-size: 0.9vw;
     font-weight: 300;
 }
 
-.movieRight > p{
+.movieRight > p {
     margin-bottom: 15px;
+}
+
+.movieRight > .lang {
+    color: goldenrod;
+}
+
+.hide-search-list {
+    display: none;
 }

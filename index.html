@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MovieVerse.</title>
+    <title>MovieVerse</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,40 +17,20 @@
           <input
             type="text"
             name="search"
-            id="search"
+            class="form-control"
+            id="movie-search-box"
             placeholder="Search Movie Title..."
             autocomplete="off"
+            onkeyup="findMovies()" 
+            onclick="findMovies()"
           />
         </form>
-        <div class="searchResults">
-          <img
-            src="https://imgs.search.brave.com/nZmqHTqbF-C7kZ_N_wvXsABCK1ESRl7DFD45uwF9dTY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29taW5nc29vbi5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzMvZ2FsbGVy/eS9zcGlkZXItbWFu/LW5vLXdheS1ob21l/LXBvc3RlcnMvc3Bp/ZGVyLW1hbi1ub3dh/eS1ob21lLXBvc3Rl/ci0xLmpwZw"
-            alt=""
-          />
-          <div class="details">
-            <h3>Spider-Man No May Home</h3>
-            <p>2023</p>
-          </div>
+        <div class="search-list" id="search-list">
+          <!-- Search list items will be inserted here dynamically -->
         </div>
       </div>
-      <div class="moviesPart">
-        <div class="movieLeft">
-          <img src="https://imgs.search.brave.com/nZmqHTqbF-C7kZ_N_wvXsABCK1ESRl7DFD45uwF9dTY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29taW5nc29vbi5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzMvZ2FsbGVy/eS9zcGlkZXItbWFu/LW5vLXdheS1ob21l/LXBvc3RlcnMvc3Bp/ZGVyLW1hbi1ub3dh/eS1ob21lLXBvc3Rl/ci0xLmpwZw" alt="">
-        </div>
-        <div class="movieRight">
-        <div class="headMovie">
-            <h1>Spider-Man No Way Home (2023)</h1>
-        </div>
-          <div class="year">
-            <h5><b>Year:</b>    2022</h5>
-            <button><b>Rating:</b> PG-13</button>
-            <p><b>Released:</b> February 18, 2023</p>
-          </div>
-          <button><b>Genre:</b> Action, Adventure, Comedy</button>
-          <h1><b>Writer:</b> Lorem ipsum dolor sit amet consectetur.</h1>
-          <p><b>Plot:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem laudantium, velit sunt hic magni dignissimos deserunt nihil similique aliquam optio.</p>
-          <p><b>Language:</b> English</p>
-        </div>
+      <div class="moviesPart" id="moviesPart">
+        <!-- Movie details will be inserted here dynamically -->
       </div>
     </div>
     <script src="script.js"></script>

@@ -37,7 +37,11 @@ function displaySearchResults(movies) {
                 <p>${movie.Year}</p>
             </div>
         `;
-        movieItem.addEventListener('click', () => loadMovieDetails(movie.imdbID));
+        movieItem.addEventListener('click', () => {
+            loadMovieDetails(movie.imdbID);
+            searchList.style.display = 'none'; // Hide the search list when a movie is selected
+            document.getElementById('movie-search-box').value = ''; // Clear the search box
+        });
         searchList.appendChild(movieItem);
     });
 

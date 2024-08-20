@@ -121,6 +121,11 @@ html, body {
     padding-bottom: 20px;
 }
 
+.movieRight{
+    width: 40%;
+    margin-top: 32px;
+}
+
 .year {
     display: flex;
     gap: 10px;
@@ -141,6 +146,14 @@ html, body {
     border: none;
 }
 
+.movieArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
 .movieRight > button {
     border: none;
     background-color: #353535;
@@ -151,10 +164,14 @@ html, body {
     margin-bottom: 15px;
 }
 
-.movieRight > h1 {
+.movieRight > h1{
     color: #fff;
     font-size: 0.9vw;
     font-weight: 300;
+}
+
+.movieTitle{
+    font-size: 1vw;
 }
 
 .movieRight > p {
@@ -163,6 +180,12 @@ html, body {
 
 .movieRight > .lang {
     color: goldenrod;
+}
+
+.movieRight > h2{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 .hide-search-list {

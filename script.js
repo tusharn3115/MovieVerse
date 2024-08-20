@@ -55,20 +55,24 @@ async function loadMovieDetails(movieID) {
 
     const moviesPart = document.getElementById('moviesPart');
     moviesPart.innerHTML = `
+    <div class="movieArea">
         <div class="movieLeft">
             <img src="${movieDetails.Poster !== 'N/A' ? movieDetails.Poster : 'placeholder.jpg'}" alt="${movieDetails.Title}">
         </div>
         <div class="movieRight">
+          <div class="movieTitle">
             <h1>${movieDetails.Title} (${movieDetails.Year})</h1>
+          </div>  
             <div class="year">
                 <h5><b>Year:</b> ${movieDetails.Year}</h5>
                 <button><b>Rating:</b> ${movieDetails.Rated}</button>
                 <p><b>Released:</b> ${movieDetails.Released}</p>
             </div>
             <button><b>Genre:</b> ${movieDetails.Genre}</button>
-            <h1><b>Writer:</b> ${movieDetails.Writer}</h1>
+            <h2><b>Writer:</b> ${movieDetails.Writer}</h2>
             <p><b>Plot:</b> ${movieDetails.Plot}</p>
             <p class="lang"><b>Language:</b> ${movieDetails.Language}</p>
         </div>
+    </div>    
     `;
 }
